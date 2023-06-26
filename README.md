@@ -3,9 +3,9 @@ This repository contains code to generate PMNS, for efficient modular arithmetic
 <br />
 <br />
 Here are the descriptions of the files in this repository:
- - EXAMPLE__pmns_gen.sage:
- - EXAMPLE__redund.sage:
- - EXAMPLE__rando.sage:
- - pmns_generator.sage:
- - pmns_arith_ops.sage:
- - pmns_rand_ops.sage:
+ - pmns_generator.sage: contains functions to generate efficient PMNS, given a prime number.
+ - EXAMPLE__pmns_gen.sage: shows an example of PMNS generation. 
+ - pmns_arith_ops.sage: contains functions for arithmetic and conversion operations in the PMNS. It also contains all the tools to study the redundancy in the PMNS, unique representation computations and equality check.
+ - EXAMPLE__redund.sage: presents examples of arithmetic and conversion operations, representation computations and equality check.
+ - pmns_rand_ops.sage: contains functions for randomised arithmetic and conversion operations.
+ - EXAMPLE__rando.sage: shows how to perform randomised operations.
