@@ -100,7 +100,7 @@ def gen_extPol_set(n, lambda_max):
 def compute_redExtPol_w(n, ext_polC):
 	R.<x> = ZZ[]
 	x = R.gen()
-	ext_pol = R(ext_polC)
+	ext_pol = R(list(ext_polC))
 	c = n-1
 	tmp = x**n
 	l1 = list(tmp%ext_pol)
@@ -155,6 +155,8 @@ def check_gamma(gmm, p, n, delta, ext_polC, wE, phi_log2):
 
 #~ checks if 'extPol' produces some PMNS and returns them if so. 
 def quick_check_ext_pol(ZX, F, p, n, redExtPol_coeffs, roots_max_duration_checks, nb_free_add, phi_log2):
+
+	redExtPol_coeffs = list(redExtPol_coeffs)
 	
 	T.<y> = F[]
 	redExtPolT = T(redExtPol_coeffs)
