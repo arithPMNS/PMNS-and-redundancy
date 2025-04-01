@@ -8,7 +8,7 @@ p = random_prime(2**bSize, lbound=2**(bSize-1)) # or p = Integer('a_value')
 phi_log2 = 64 
 lambda_max = 3
 
-delta = 0
+delta = 0 
 
 n = floor(p.nbits()/phi_log2) + 1
 
