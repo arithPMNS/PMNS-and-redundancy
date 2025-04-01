@@ -1,7 +1,7 @@
 from multiprocessing import Process, Queue
 
 ########################################################################
-
+  
 def build_lattice_base(p, n, gmm):
 	b = []
 	l = [p] + [0]*(n-1)
