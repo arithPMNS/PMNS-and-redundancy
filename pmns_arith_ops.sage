@@ -9,6 +9,7 @@ def pmns_red_int(op, ri_mat, neg_iri_mat, iM_dom, phi):
 	r = op + t
 	return (r/phi)
 
+
 #~ returns a representation of 'op/phi'
 def pmns_trans_red_int(op, ri_mat, neg_iri_mat, iM_dom, phi, trans_v):
 	return pmns_red_int(op+trans_v, ri_mat, neg_iri_mat, iM_dom, phi)
